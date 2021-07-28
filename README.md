@@ -62,7 +62,7 @@ Testado no Zabbix 5.4.
 ### TEMPLATE LINKS
 <table>
     <tr>
-        <td>Interfaces Simple SNMP (Network interfaces discovery)</td>
+        <td>Interfaces Simple SNMP <i>(Network interfaces discovery)</i></td>
 	</tr>
 </table>
 <BR>
@@ -71,13 +71,13 @@ Testado no Zabbix 5.4.
 ### ITEMS COLLECTED
 <table>
 	<tr>
-        <td>Camera IP (discovery)</td>
+        <td>Camera IP <i>(discovery)</i></td>
   </tr>
 	<tr>
-        <td>Camera Name (discovery)</td>
+        <td>Camera Name <i>(discovery)</i></td>
   </tr>
 	<tr>
-        <td>Camera Status (discovery)</td>
+        <td>Camera Status <i>(discovery)</i></td>
   </tr>
 	<tr>
         <td>CPU Usage</td>
@@ -98,19 +98,19 @@ Testado no Zabbix 5.4.
         <td>Device Type</td>
   </tr>
 	<tr>
-        <td>Disk Name (discovery)</td>
+        <td>Disk Name <i>(discovery)</i></td>
   </tr>
 	<tr>
-        <td>Disk Percent Free (discovery)</td>
+        <td>Disk Percent Free <i>(discovery)</i></td>
   </tr>
 	<tr>
-        <td>Disk Size (discovery)</td>
+        <td>Disk Size <i>(discovery)</i></td>
   </tr>
 	<tr>
-        <td>Disk Status (discovery)</td>
+        <td>Disk Status <i>(discovery)</i></td>
   </tr>
 	<tr>
-        <td>Disk Used (discovery)</td>
+        <td>Disk Used <i>(discovery)</i></td>
   </tr>
 	<tr>
         <td>Memory Utilization</td>
