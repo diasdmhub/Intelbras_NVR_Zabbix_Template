@@ -170,7 +170,7 @@ Testado no Zabbix 5.4.
 ### TRIGGERS
 <table>
 	<tr>
-        <td>CameraCamera status changed (discovery)</td>
+        <td>CameraCamera status changed <i>(discovery)</i></td>
   </tr>
 	<tr>
         <td>CPU High Utilization</td>
@@ -185,7 +185,7 @@ Testado no Zabbix 5.4.
         <td>Device System Version changed</td>
   </tr>
 	<tr>
-        <td>Disk ERROR  (discovery)</td>
+        <td>Disk ERROR <i>(discovery)</i></td>
   </tr>
 	<tr>
         <td>Memory High Utilization</td>
@@ -215,7 +215,7 @@ Testado no Zabbix 5.4.
         <td>CPU Utilization</td>
   </tr>
 	<tr>
-        <td>Disk Usage (discovery)</td>
+        <td>Disk Usage <i>(discovery)</i></td>
   </tr>
 	<tr>
         <td>Memory Utilization</td>
@@ -242,13 +242,13 @@ Testado no Zabbix 5.4.
 ### DISCOVERY RULES
 <table>
 	<tr>
-        <td>Network interfaces discovery (Interfaces Simple SNMP template)</td>
+        <td>Network interfaces discovery <i>(Interfaces Simple SNMP template)</i></td>
   </tr>
 	<tr>
-        <td>Disk Discovery (items, trigger, graph)</td>
+        <td>Disk Discovery <i>(items, trigger, graph)</i></td>
   </tr>
 	<tr>
-        <td>Camera Discovery (items, trigger)</td>
+        <td>Camera Discovery <i>(items, trigger)</i></td>
   </tr>
 </table>
 <BR>
