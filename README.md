@@ -263,6 +263,11 @@ Testado no Zabbix 5.4.
 <BR>
 
 
+### DASHBOARD EXAMPLE
+<img src="NVR_Dashboard.png" alt="Dashboard example">
+<BR>
+
+
 ### TESTED AS IS
 
 <p><b>
