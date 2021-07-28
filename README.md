@@ -194,10 +194,10 @@ Testado no Zabbix 5.4.
         <td>No SNMP data collection</td>
   </tr>
 	<tr>
-        <td>SNMP Bad community attempt - Depends on: Intelbras NVR NVD3116P SNMP: No SNMP data collection</td>
+        <td>SNMP Bad community attempt - <i>Depends on: No SNMP data collection</i></td>
   </tr>
 	<tr>
-        <td>System has been restarted (uptime < 10m) - Depends on: Intelbras NVR NVD3116P SNMP: No SNMP data collection</td>
+        <td>System has been restarted (uptime < 10m) - <i>Depends on: No SNMP data collection</i></td>
   </tr>
 	<tr>
         <td>System name has changed</td>
