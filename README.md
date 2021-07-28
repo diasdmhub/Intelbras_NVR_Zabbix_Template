@@ -1,4 +1,4 @@
-# Zabbix Template - NVR Intelbras NVD 3116 P
+# Zabbix SNMP Template - NVR Intelbras NVD 3116 P
 
 ### OVERVIEW
 
