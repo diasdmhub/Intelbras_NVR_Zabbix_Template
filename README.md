@@ -170,7 +170,7 @@ Testado no Zabbix 5.4.
 ### TRIGGERS
 <table>
 	<tr>
-        <td>CameraCamera status changed <i>(discovery)</i></td>
+        <td>Camera status changed <i>(discovery)</i></td>
   </tr>
 	<tr>
         <td>CPU High Utilization</td>
