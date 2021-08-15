@@ -268,6 +268,9 @@ Testado no Zabbix 5.4.
 <BR>
 
 
+### CHECK OUT <a href="https://github.com/diasdmhub/Intelbras_NVD3116P_Template/wiki">HOW TO IMPORT NVR Intelbras "NVD 3116 P" TEMPLATE WIKI.</a>
+<BR>
+
 ### TESTED AS IS
 
 <p><b>
