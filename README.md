@@ -173,40 +173,43 @@ Testado no Zabbix 5.4.
 
 ### TRIGGERS
 <table>
-	<tr>
+  <tr>
         <td>Camera status changed <i>(discovery)</i></td>
   </tr>
-	<tr>
+  <tr>
         <td>CPU High Utilization</td>
   </tr>
-	<tr>
+  <tr>
         <td>Device IP changed</td>
   </tr>
-	<tr>
+  <tr>
         <td>Device Status Changed</td>
   </tr>
-	<tr>
+  <tr>
         <td>Device System Version changed</td>
   </tr>
-	<tr>
+  <tr>
         <td>Disk ERROR <i>(discovery)</i></td>
   </tr>
-	<tr>
+  <tr>
+        <td>Disk free space is low <i>(discovery)</i></td>
+  </tr>
+  <tr>
         <td>Memory High Utilization</td>
   </tr>
-	<tr>
+  <tr>
         <td>No SNMP data collection</td>
   </tr>
-	<tr>
+  <tr>
         <td>SNMP Bad community attempt - <i>Depends on: No SNMP data collection</i></td>
   </tr>
-	<tr>
+  <tr>
         <td>System has been restarted (uptime < 10m) - <i>Depends on: No SNMP data collection</i></td>
   </tr>
-	<tr>
+  <tr>
         <td>System name has changed</td>
   </tr>
-	<tr>
+  <tr>
         <td>System Status Offline</td>
   </tr>
 </table>
