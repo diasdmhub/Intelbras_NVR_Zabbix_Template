@@ -1,5 +1,7 @@
 # Zabbix SNMP Template - NVR Intelbras NVD 3116 P
 
+<div align="right">If you copy, please mention your source.</div>
+
 ### OVERVIEW
 
 <p>
