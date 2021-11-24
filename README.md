@@ -1,4 +1,4 @@
-# Zabbix SNMP Template - NVR Intelbras NVD 3116 P
+# Zabbix SNMP Template - NVR Intelbras NVD P
 
 <div align="right">If you copy, please mention your source.</div>
 
@@ -17,7 +17,7 @@ Testado no Zabbix 5.4.
 <BR>
 
 
-### CHECK OUT <a href="https://github.com/diasdmhub/Intelbras_NVD3116P_Template/wiki">HOW TO IMPORT NVR Intelbras "NVD 3116 P" TEMPLATE WIKI.</a>
+### CHECK OUT <a href="https://github.com/diasdmhub/Intelbras_NVD3116P_Template/wiki">HOW TO IMPORT NVR Intelbras TEMPLATE WIKI.</a>
 <BR>
 
 <!--
