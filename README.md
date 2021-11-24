@@ -1,4 +1,4 @@
-# Zabbix SNMP Template - NVR Intelbras NVD P
+# Zabbix SNMP Template - NVR Intelbras
 
 <div align="right">If you copy, please mention your source.</div>
 
