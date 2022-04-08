@@ -11,8 +11,8 @@ Monitore dados SNMP do seu NVR Intelbras.
 Feito especificamente para o NVR modelo "NVD 3116 P". Pode funcionar em outros modelos de NVR da <b>Intelbras ou Dahua</b>, mas, para isso, adaptações podem ser necessárias.
 <BR><i>Made specifically for NVR model "NVD 3116 P". Might work on different NVR models from <b>Intelbras or Dahua</b>, but, for that, adaptations might be required.</i>
 
-Testado no Zabbix 5.4.
-<BR><i>Tested on Zabbix 5.4.</i>
+Testado no Zabbix 5.4 - 6.0.
+<BR><i>Tested on Zabbix 5.4 - 6.0.</i>
 </p>
 <BR>
 
