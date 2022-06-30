@@ -8,11 +8,11 @@
 Monitore dados SNMP do seu NVR Intelbras.
 <BR><i>Monitor SNMP data from your Intelbras NVR.</i>
 
-Feito especificamente para o NVR modelo "NVD 3116 P". Pode funcionar em outros modelos de NVR da <b>Intelbras ou Dahua</b>, mas, para isso, adaptações podem ser necessárias.
-<BR><i>Made specifically for NVR model "NVD 3116 P". Might work on different NVR models from <b>Intelbras or Dahua</b>, but, for that, adaptations might be required.</i>
+Funciona em modelos de NVR da <b>Intelbras</b> ou <b>Dahua</b>, entretanto, adaptações podem ser necessárias dependendo do dispositivo.
+<BR><i>Works on different NVR models from <b>Intelbras</b> or <b>Dahua</b>, although, adaptations might be required.</i>
 
-Testado no Zabbix 5.4 - 6.0.
-<BR><i>Tested on Zabbix 5.4 - 6.0.</i>
+Disponível para o Zabbix 5.4 or higher.
+<BR><i>Available for Zabbix 5.4 or higher.</i>
 </p>
 <BR>
 
@@ -280,8 +280,8 @@ Testado no Zabbix 5.4 - 6.0.
 ### TESTED AS IS
 
 <p><b>
-  Esta template foi testada somente com o NVR Intelbras "NVD 3116 P". Pode funcionar em outros NVRs Intelbras ou Dahua também.
-  <BR><i>This template was tested only with Intelbras NVR "NVD 3116 P". It might work with other Intelbras or Dahua NVRs as well.</i>
+  Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Deve funcionar em outros de NVRs Intelbras ou Dahua também.
+  <BR><i>This template was tested only with Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should work with other Intelbras or Dahua NVRs as well.</i>
 
   Observações são bem-vindas.
   <BR><i>Feedbacks are welcome.</i>
