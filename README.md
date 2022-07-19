@@ -46,8 +46,12 @@ Disponível para o Zabbix 5.4 or higher.
 	    <th><b>Default</b></th>
 	</tr>
 	<tr>
+        <td>{$DISK_FREE_WARN}</td>
+	<td>0</td>
+	<tr>
+	<tr>
         <td>{$HTTP_PORT}</td>
-		<td>80</td>
+	<td>80</td>
 	<tr>
         <td>{$HTTPS_PORT}</td>
         <td>443</td>
@@ -134,9 +138,6 @@ Disponível para o Zabbix 5.4 or higher.
         <td>SNMP agent availability</td>
   </tr>
 	<tr>
-        <td>SNMP Bad community</td>
-  </tr>
-	<tr>
         <td>SNMP traps (fallback)</td>
   </tr>
 	<tr>
@@ -159,9 +160,6 @@ Disponível para o Zabbix 5.4 or higher.
   </tr>
 	<tr>
         <td>System Time</td>
-  </tr>
-	<tr>
-        <td>TCP Established Connections</td>
   </tr>
 	<tr>
         <td>Uptime Enterprise</td>
@@ -201,9 +199,6 @@ Disponível para o Zabbix 5.4 or higher.
   </tr>
   <tr>
         <td>No SNMP data collection</td>
-  </tr>
-  <tr>
-        <td>SNMP Bad community attempt - <i>Depends on: No SNMP data collection</i></td>
   </tr>
   <tr>
         <td>System has been restarted (uptime < 10m) - <i>Depends on: No SNMP data collection</i></td>
