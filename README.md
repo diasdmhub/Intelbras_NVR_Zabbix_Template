@@ -11,7 +11,7 @@ Monitore dados SNMP do seu NVR Intelbras.
 Funciona em modelos de NVR da <b>Intelbras</b> ou <b>Dahua</b>, entretanto, adaptações podem ser necessárias dependendo do dispositivo.
 <BR><i>Works on different NVR models from <b>Intelbras</b> or <b>Dahua</b>, although, adaptations might be required.</i>
 
-Disponível para o Zabbix 5.4 or higher.
+Disponível para o **Zabbix 5.4 ou maior**.
 <BR><i>Available for Zabbix 5.4 or higher.</i>
 </p>
 <BR>
