@@ -1,6 +1,14 @@
 # Zabbix SNMP Template - NVR Intelbras
 
-<div align="right">If you copy, please mention your source.</div>
+<div align="right">
+<a href="./LICENSE">
+	<img src="https://img.shields.io/badge/License-GPL3-blue?logo=opensourceinitiative&logoColor=fff" alt="License GPL3">
+</a>
+<a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/latest">
+	<img src="https://img.shields.io/badge/Version-Latest-blue?logo=azurepipelines&amp;color=0aa8d2" alt="Current Version">
+</a>
+</div>
+
 
 ### OVERVIEW
 
