@@ -21,11 +21,17 @@ Funciona em modelos de NVR da <b>Intelbras</b> ou <b>Dahua</b>, entretanto, adap
 
 Disponível para o **Zabbix 5.4 ou maior**.
 <BR><i>Available for Zabbix 5.4 or higher.</i>
+
+<b>
+Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Deve funcionar em outros de NVRs Intelbras ou Dahua também.
+<BR><i>This template was tested on Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should work with other Intelbras or Dahua NVRs as well.</i>
+
+<BR>Observações são bem-vindas.
+<BR><i>Feedbacks are welcome.</i>
+</b>
 </p>
-<BR>
 
-
-### CHECK OUT <a href="https://github.com/diasdmhub/Intelbras_NVD3116P_Template/wiki">HOW TO IMPORT NVR Intelbras TEMPLATE WIKI.</a>
+#### CHECK OUT <a href="https://github.com/diasdmhub/Intelbras_NVD3116P_Template/wiki">HOW TO IMPORT NVR Intelbras TEMPLATE WIKI.</a>
 <BR>
 
 <!--
@@ -50,26 +56,29 @@ Disponível para o **Zabbix 5.4 ou maior**.
 ### MACROS USED
 <table>
     <tr>
-	    <th><b>Name</b></th>
-	    <th><b>Default</b></th>
-	</tr>
-	<tr>
+	<th><b>Name</b></th>
+	<th><b>Default</b></th>
+    </tr>
+    <tr>
         <td>{$DISK_FREE_WARN}</td>
 	<td>0</td>
-	<tr>
-	<tr>
+    </tr>
+    <tr>
         <td>{$HTTP_PORT}</td>
 	<td>80</td>
-	<tr>
+    </tr>
+    <tr>
         <td>{$HTTPS_PORT}</td>
         <td>443</td>
-	<tr>
+    </tr>
+    <tr>
         <td>{$MEDIA_PORT}</td>
         <td>37777</td>
-	<tr>
+    </tr>
+    <tr>
         <td>{$SNMP.TIMEOUT}</td>
         <td>5m</td>
-	</tr>
+    </tr>
 </table>
 
 <p>Essas macros devem ser alteradas a nível de Host para refletir as portas de seu host monitorado.
@@ -80,99 +89,117 @@ Disponível para o **Zabbix 5.4 ou maior**.
 ### TEMPLATE LINKS
 <table>
     <tr>
-        <td>Interfaces Simple SNMP <i>(Network interfaces discovery)</i></td>
-	</tr>
+        <td><a href="https://www.zabbix.com/integrations/snmp#interfaces_simple_snmp">Interfaces Simple SNMP</a> <i>(Network interfaces discovery)</i></td>
+    </tr>
+</table>
+<BR>
+
+
+### DISCOVERY RULES
+<table>
+    <tr>
+        <td>Camera Discovery <i>(items, trigger)</i></td>
+    </tr>
+    <tr>
+	<td>Disk Discovery <i>(items, trigger, graph)</i></td>
+    </tr>
+    <tr>
+	<td>Interfaces Simple by SNMP: Network interfaces discovery</td>
+    </tr>
 </table>
 <BR>
 
 
 ### ITEMS COLLECTED
 <table>
-	<tr>
+  <tr>
         <td>Camera IP <i>(discovery)</i></td>
   </tr>
-	<tr>
+  <tr>
         <td>Camera Name <i>(discovery)</i></td>
   </tr>
-	<tr>
+  <tr>
         <td>Camera Status <i>(discovery)</i></td>
   </tr>
-	<tr>
+  <tr>
         <td>CPU Usage</td>
   </tr>
-	<tr>
+  <tr>
         <td>Device IP</td>
   </tr>
-	<tr>
+  <tr>
         <td>Device Serial Number</td>
   </tr>
-	<tr>
+  <tr>
         <td>Device Status</td>
   </tr>
-	<tr>
+  <tr>
         <td>Device System Version</td>
   </tr>
-	<tr>
+  <tr>
         <td>Device Type</td>
   </tr>
-	<tr>
+  <tr>
         <td>Disk Name <i>(discovery)</i></td>
   </tr>
-	<tr>
+  <tr>
         <td>Disk Percent Free <i>(discovery)</i></td>
   </tr>
-	<tr>
+  <tr>
         <td>Disk Size <i>(discovery)</i></td>
   </tr>
-	<tr>
+  <tr>
         <td>Disk Status <i>(discovery)</i></td>
   </tr>
-	<tr>
+  <tr>
         <td>Disk Used <i>(discovery)</i></td>
   </tr>
-	<tr>
+  <tr>
         <td>Memory Utilization</td>
   </tr>
-	<tr>
+  <tr>
         <td>NVR Performance</td>
   </tr>
-	<tr>
+  <tr>
         <td>NVR Performance Average</td>
   </tr>
-	<tr>
-        <td>NVR WEB Performance</td>
+  <tr>
+        <td>NVR Performance HTTP</td>
   </tr>
-	<tr>
+  <tr>
+        <td>NVR Performance HTTPS</td>
+  </tr>
+  <tr>
         <td>SNMP agent availability</td>
   </tr>
-	<tr>
+  <tr>
         <td>SNMP traps (fallback)</td>
   </tr>
-	<tr>
+  <tr>
         <td>System contact details</td>
   </tr>
-	<tr>
+  <tr>
         <td>System description</td>
   </tr>
-	<tr>
+  <tr>
         <td>System location</td>
   </tr>
-	<tr>
+  <tr>
         <td>System name</td>
   </tr>
-	<tr>
+  <tr>
         <td>System object ID</td>
   </tr>
-	<tr>
+  <tr>
         <td>System Status</td>
   </tr>
-	<tr>
+  <tr>
         <td>System Time</td>
   </tr>
-	<tr>
+  <tr>
         <td>Uptime Enterprise</td>
   </tr>
-	<tr>
+  <tr>
         <td>Uptime Generic</td>
   </tr>
 </table>
@@ -182,7 +209,10 @@ Disponível para o **Zabbix 5.4 ou maior**.
 ### TRIGGERS
 <table>
   <tr>
-        <td>Camera status changed <i>(discovery)</i></td>
+        <td>Camera disconnected <i>(discovery)</i></td>
+  </tr>
+  <tr>
+        <td>Camera absent <i>(discovery)</i></td>
   </tr>
   <tr>
         <td>CPU High Utilization</td>
@@ -251,41 +281,17 @@ Disponível para o **Zabbix 5.4 ou maior**.
 <BR>
 
 
-### DISCOVERY RULES
-<table>
-	<tr>
-        <td>Network interfaces discovery <i>(Interfaces Simple SNMP template)</i></td>
-  </tr>
-	<tr>
-        <td>Disk Discovery <i>(items, trigger, graph)</i></td>
-  </tr>
-	<tr>
-        <td>Camera Discovery <i>(items, trigger)</i></td>
-  </tr>
-</table>
-<BR>
-
-
 ### WEB SCENARIOS
 <table>
-	<tr>
-        <td>NVR HTTP Performance</td>
+  <tr>
+        <td>NVR Web HTTP Performance</td>
+  </tr>
+  <tr>
+        <td>NVR Web HTTPS Performance</td>
   </tr>
 </table>
 <BR>
 
 
 ### DASHBOARD EXAMPLE
-<img src="NVR_Dashboard.png" alt="Dashboard example">
-<BR>
-
-
-### TESTED AS IS
-
-<p><b>
-  Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Deve funcionar em outros de NVRs Intelbras ou Dahua também.
-  <BR><i>This template was tested only with Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should work with other Intelbras or Dahua NVRs as well.</i>
-
-  Observações são bem-vindas.
-  <BR><i>Feedbacks are welcome.</i>
-</b></p>
+![Dashboard example](images/nvr_dashboard.png)
