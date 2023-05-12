@@ -106,10 +106,10 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
         <td><del><a href="https://www.zabbix.com/integrations/snmp#interfaces_simple_snmp">Interfaces Simple SNMP</a> <i>(Network interfaces discovery)</i></del></td>
   </tr>
   <tr>
-	<td><i><b>NÃO MAIS SUPORTADA</b> - Itens e Macros ainda estão presentes</i></td>
+	<td><i><b>Não mais suportada</b> - Itens e Macros ainda estão presentes</i></td>
   </tr>
   <tr>
-	<td><i><b>NOT SUPOPRTED ANYMORE</b> - Items and Macros are still present</i></td>
+	<td><i><b>Not supported anymore</b> - Items and Macros are still present</i></td>
   </tr>
 </table>
 <BR>
@@ -345,5 +345,5 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 
 ### DASHBOARD EXAMPLE
 ![Dashboard example](images/nvr_dashboard.png)
-<BR>
+---
 ![Dashboard example](images/nvr_dashboard2.png)
