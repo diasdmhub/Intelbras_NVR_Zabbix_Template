@@ -19,8 +19,8 @@ Monitore dados SNMP do seu NVR Intelbras.
 Funciona em modelos de NVR da <b>Intelbras</b> ou <b>Dahua</b>, entretanto, adaptações podem ser necessárias dependendo do dispositivo.
 <BR><i>Works on different NVR models from <b>Intelbras</b> or <b>Dahua</b>, although, adaptations might be required.</i>
 
-Disponível para o **Zabbix 5.4 ou maior**.
-<BR><i>Available for Zabbix 5.4 or higher.</i>
+Disponível para o **Zabbix 5.4 ou maior**. Novas versões do Zabbix podem ter alterações.
+<BR><i>Available for Zabbix 5.4 or higher. New Zabbix versions might have changes.</i>
 
 <b>
 Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Deve funcionar em outros de NVRs Intelbras ou Dahua também.
@@ -31,7 +31,9 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 </b>
 </p>
 
-#### CHECK OUT <a href="https://github.com/diasdmhub/Intelbras_NVD3116P_Template/wiki">HOW TO IMPORT NVR Intelbras TEMPLATE WIKI.</a>
+---
+### ➡️ <i><a href="[https://github.com/diasdmhub/Intelbras_NVD3116P_Template/wiki](https://www.zabbix.com/documentation/6.4/en/manual/xml_export_import/templates#importing)">Como importar templates/How to import templates.</i></a>
+---
 <BR>
 
 <!--
@@ -60,16 +62,16 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 	<th><b>Default</b></th>
     </tr>
     <tr>
+        <td>{$API_PASS}</td>
+	<td></td>
+    </tr>
+    <tr>
+        <td>{$API_USER}</td>
+	<td>admin</td>
+    </tr>
+    <tr>
         <td>{$DISK_FREE_WARN}</td>
 	<td>0</td>
-    </tr>
-    <tr>
-        <td>{$HTTP_PORT}</td>
-	<td>80</td>
-    </tr>
-    <tr>
-        <td>{$HTTPS_PORT}</td>
-        <td>443</td>
     </tr>
     <tr>
         <td>{$MEDIA_PORT}</td>
@@ -78,6 +80,18 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
     <tr>
         <td>{$SNMP.TIMEOUT}</td>
         <td>5m</td>
+    </tr>
+    <tr>
+        <td>{$WEB_PORT}</td>
+	<td>80</td>
+    </tr>
+    <tr>
+        <td>{$WEB_SERVICE}</td>
+        <td>http</td>
+    </tr>
+    <tr>
+	<td><i>Network Interface macros</i></td>
+	<td></td>
     </tr>
 </table>
 
@@ -88,9 +102,15 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 
 ### TEMPLATE LINKS
 <table>
-    <tr>
-        <td><a href="https://www.zabbix.com/integrations/snmp#interfaces_simple_snmp">Interfaces Simple SNMP</a> <i>(Network interfaces discovery)</i></td>
-    </tr>
+  <tr>
+        <td><del><a href="https://www.zabbix.com/integrations/snmp#interfaces_simple_snmp">Interfaces Simple SNMP</a> <i>(Network interfaces discovery)</i></del></td>
+  </tr>
+  <tr>
+	<td><i><b>NÃO MAIS SUPORTADA</b> - Itens e Macros ainda estão presentes</i></td>
+  </tr>
+  <tr>
+	<td><i><b>NOT SUPOPRTED ANYMORE</b> - Items and Macros are still present</i></td>
+  </tr>
 </table>
 <BR>
 
@@ -104,7 +124,7 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 	<td>Disk Discovery <i>(items, trigger, graph)</i></td>
     </tr>
     <tr>
-	<td>Interfaces Simple by SNMP: Network interfaces discovery</td>
+	<td>Network interfaces discovery <i>(items, trigger, graph)</i></td>
     </tr>
 </table>
 <BR>
@@ -155,19 +175,40 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
         <td>Disk Used <i>(discovery)</i></td>
   </tr>
   <tr>
+	<td>Interface: Bits received <i>(discovery)</i></td>
+  </tr>
+  <tr>
+	<td>Interface: Bits sent <i>(discovery)</i></td>
+  </tr>
+  <tr>
+	<td>Interface: Inbound packets discarded <i>(discovery)</i></td>
+  </tr>
+  <tr>
+	<td>Interface: Inbound packets with errors <i>(discovery)</i></td>
+  </tr>
+  <tr>
+	<td>Interface: Interface type <i>(discovery)</i></td>
+  </tr>
+  <tr>
+	<td>Interface: Operational status <i>(discovery)</i></td>
+  </tr>
+  <tr>
+	<td>Interface: Outbound packets discarded <i>(discovery)</i></td>
+  </tr>
+  <tr>
+	<td>Interface: Outbound packets with errors <i>(discovery)</i></td>
+  </tr>
+  <tr>
+	<td>Interface: Speed <i>(discovery)</i></td>
+  </tr>
+  <tr>
         <td>Memory Utilization</td>
   </tr>
   <tr>
-        <td>NVR Performance</td>
+        <td>NVR Performance Media</td>
   </tr>
   <tr>
-        <td>NVR Performance Average</td>
-  </tr>
-  <tr>
-        <td>NVR Performance HTTP</td>
-  </tr>
-  <tr>
-        <td>NVR Performance HTTPS</td>
+        <td>NVR Performance Web</td>
   </tr>
   <tr>
         <td>SNMP agent availability</td>
@@ -233,6 +274,18 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
         <td>Disk free space is low <i>(discovery)</i></td>
   </tr>
   <tr>
+        <td>Interface: Ethernet has changed to lower speed than it was before <i>(discovery)</i></td>
+  </tr>
+  <tr>
+        <td>Interface: High bandwidth usage <i>(discovery)</i></td>
+  </tr>
+  <tr>
+        <td>Interface: High error rate <i>(discovery)</i></td>
+  </tr>
+  <tr>
+        <td>Interface: Link down <i>(discovery)</i></td>
+  </tr>
+  <tr>
         <td>Memory High Utilization</td>
   </tr>
   <tr>
@@ -256,17 +309,17 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
   <tr>
         <td>CPU Utilization</td>
   </tr>
-	<tr>
+  <tr>
         <td>Disk Usage <i>(discovery)</i></td>
   </tr>
-	<tr>
+  <tr>
+        <td>Interface: Network traffic <i>(discovery)</i></td>
+  </tr>
+  <tr>
         <td>Memory Utilization</td>
   </tr>
-	<tr>
+  <tr>
         <td>NVR Response Time</td>
-  </tr>
-	<tr>
-        <td>Total connections</td>
   </tr>
 </table>
 <BR>
@@ -284,10 +337,7 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 ### WEB SCENARIOS
 <table>
   <tr>
-        <td>NVR Web HTTP Performance</td>
-  </tr>
-  <tr>
-        <td>NVR Web HTTPS Performance</td>
+        <td>NVR Web Performance</td>
   </tr>
 </table>
 <BR>
@@ -295,3 +345,5 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 
 ### DASHBOARD EXAMPLE
 ![Dashboard example](images/nvr_dashboard.png)
+<BR>
+![Dashboard example](images/nvr_dashboard2.png)
