@@ -34,7 +34,7 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 ---
 ### ➡️ <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases">Download (releases)</a>
 ---
-#### ➡️ <i><a href="[https://github.com/diasdmhub/Intelbras_NVD3116P_Template/wiki](https://www.zabbix.com/documentation/6.4/en/manual/xml_export_import/templates#importing)">Como importar templates/How to import templates.</i></a>
+#### ➡️ <a href="https://www.zabbix.com/documentation/6.4/en/manual/xml_export_import/templates#importing"><i>Como importar templates/How to import templates.</i></a>
 ---
 <BR>
 
