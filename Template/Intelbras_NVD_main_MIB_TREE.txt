@@ -1,0 +1,363 @@
++--device(2)
+   |
+   +--systemInfo(1)
+   |  |
+   |  +--versionInfo(1)
+   |  |  |
+   |  |  +-- -R-- String    softwareRevision(1)
+   |  |  |        Textual Convention: DisplayString
+   |  |  |        Size: 0..255
+   |  |  +-- -R-- String    hardwareRevision(2)
+   |  |           Textual Convention: DisplayString
+   |  |           Size: 0..255
+   |  |
+   |  +--productInfo(2)
+   |  |  |
+   |  |  +-- -R-- INTEGER   videoChannel(1)
+   |  |  +-- -R-- INTEGER   alarmInput(2)
+   |  |  +-- -R-- INTEGER   alarmOutput(3)
+   |  |  +-- -R-- String    serialNumber(4)
+   |  |  |        Textual Convention: DisplayString
+   |  |  |        Size: 0..255
+   |  |  +-- -R-- String    systemVersion(5)
+   |  |  |        Textual Convention: DisplayString
+   |  |  |        Size: 0..255
+   |  |  +-- -R-- String    deviceType(6)
+   |  |  |        Textual Convention: DisplayString
+   |  |  |        Size: 0..255
+   |  |  +-- -R-- String    deviceClass(7)
+   |  |  |        Textual Convention: DisplayString
+   |  |  |        Size: 0..255
+   |  |  +-- -R-- EnumVal   deviceStatus(8)
+   |  |  |        Values: bad(0), good(1)
+   |  |  +-- -RW- String    machineName(9)
+   |  |  |        Textual Convention: DisplayString
+   |  |  |        Size: 0..255
+   |  |  +-- -RW- String    location(10)
+   |  |           Textual Convention: DisplayString
+   |  |           Size: 0..255
+   |  |
+   |  +-- -R-- INTEGER   cpuUsage(3)
+   |  +-- -R-- String    lastestEvent(4)
+   |  |        Textual Convention: DisplayString
+   |  |        Size: 0..255
+   |  +-- -R-- INTEGER   encodeNo(5)
+   |  +-- -R-- TimeTicks deviceUpTime(6)
+   |  +-- -RW- EnumVal   systemStatus(7)
+   |  |        Values: online(0), offline(1), reboot(2)
+   |  +-- -RW- String    systemTime(8)
+   |  |        Textual Convention: DisplayString
+   |  |        Size: 19
+   |  |
+   |  +--memoryInfo(9)
+   |  |  |
+   |  |  +-- -R-- INTEGER   memoryTotal(1)
+   |  |  +-- -R-- INTEGER   memoryUsage(2)
+   |  |           Range: 0..100
+   |  |
+   |  +--operatingSystemInfo(10)
+   |     |
+   |     +-- -R-- String    osName(1)
+   |     |        Textual Convention: DisplayString
+   |     |        Size: 0..255
+   |     +-- -R-- String    osVersion(2)
+   |              Textual Convention: DisplayString
+   |              Size: 0..255
+   |
+   +--networkInfo(2)
+   |  |
+   |  +--networkPort(1)
+   |  |  |
+   |  |  +-- -RW- INTEGER   tcpPort(1)
+   |  |  +-- -RW- INTEGER   udpPort(2)
+   |  |  +-- -RW- INTEGER   httpPort(3)
+   |  |  +-- -RW- INTEGER   rtspPort(4)
+   |  |  +-- -RW- INTEGER   maxConnectNum(5)
+   |  |  +-- -RW- INTEGER   httpsPort(6)
+   |  |
+   |  +--tcpIpInfo(2)
+   |     |
+   |     +-- -RW- EnumVal   getIpmode(1)
+   |     |        Values: static(0), dhcp(1)
+   |     +-- -R-- String    macAddr(2)
+   |     |        Textual Convention: DisplayString
+   |     |        Size: 0..255
+   |     +-- -RW- EnumVal   ipVersion(3)
+   |     |        Values: ipv4(0), ipv6(1)
+   |     +-- -RW- String    subnetMask(4)
+   |     |        Textual Convention: DisplayString
+   |     |        Size: 0..255
+   |     +-- -RW- String    defaultGateway(5)
+   |     |        Textual Convention: DisplayString
+   |     |        Size: 0..255
+   |     +-- -RW- String    preferredDns(6)
+   |     |        Textual Convention: DisplayString
+   |     |        Size: 0..255
+   |     +-- -RW- String    alternateDns(7)
+   |     |        Textual Convention: DisplayString
+   |     |        Size: 0..255
+   |     +-- -R-- String    ipAddr(8)
+   |              Textual Convention: DisplayString
+   |              Size: 0..255
+   |
+   +--configInfo(3)
+   |  |
+   |  +--encodeConfig(1)
+   |  |  |
+   |  |  +--mainStreamInfo(1)
+   |  |  |  |
+   |  |  |  +--regularStreamInfoTable(1)
+   |  |  |  |  |
+   |  |  |  |  +--regularStreamInfoEntry(1)
+   |  |  |  |     |  Index: regularChannelNo
+   |  |  |  |     |
+   |  |  |  |     +-- -R-- INTEGER   regularChannelNo(1)
+   |  |  |  |     +-- -RW- String    regularCompression(2)
+   |  |  |  |     |        Textual Convention: DisplayString
+   |  |  |  |     |        Size: 0..255
+   |  |  |  |     +-- -RW- INTEGER   regularFPS(3)
+   |  |  |  |     +-- -RW- String    regularResolution(4)
+   |  |  |  |     |        Textual Convention: DisplayString
+   |  |  |  |     |        Size: 0..255
+   |  |  |  |     +-- -RW- INTEGER   regularBitRate(5)
+   |  |  |  |
+   |  |  |  +--mdStreamInfoTable(2)
+   |  |  |  |  |
+   |  |  |  |  +--mdStreamInfoEntry(1)
+   |  |  |  |     |  Index: mdChannelNo
+   |  |  |  |     |
+   |  |  |  |     +-- -R-- INTEGER   mdChannelNo(1)
+   |  |  |  |     +-- -RW- String    mdCompression(2)
+   |  |  |  |     |        Textual Convention: DisplayString
+   |  |  |  |     |        Size: 0..255
+   |  |  |  |     +-- -RW- INTEGER   mdFPS(3)
+   |  |  |  |     +-- -RW- String    mdResolution(4)
+   |  |  |  |     |        Textual Convention: DisplayString
+   |  |  |  |     |        Size: 0..255
+   |  |  |  |     +-- -RW- INTEGER   mdBitRate(5)
+   |  |  |  |
+   |  |  |  +--alarmStreamInfoTable(3)
+   |  |  |     |
+   |  |  |     +--alarmStreamInfoEntry(1)
+   |  |  |        |  Index: alarmChannelNo
+   |  |  |        |
+   |  |  |        +-- -R-- INTEGER   alarmChannelNo(1)
+   |  |  |        +-- -RW- String    alarmCompression(2)
+   |  |  |        |        Textual Convention: DisplayString
+   |  |  |        |        Size: 0..255
+   |  |  |        +-- -RW- INTEGER   alarmFPS(3)
+   |  |  |        +-- -RW- String    alarmResolution(4)
+   |  |  |        |        Textual Convention: DisplayString
+   |  |  |        |        Size: 0..255
+   |  |  |        +-- -RW- INTEGER   alarmBitRate(5)
+   |  |  |
+   |  |  +--extraStreamInfo(2)
+   |  |     |
+   |  |     +--extra1StreamInfoTable(1)
+   |  |        |
+   |  |        +--extra1StreamInfoEntry(1)
+   |  |           |  Index: extra1ChannelNo
+   |  |           |
+   |  |           +-- -R-- INTEGER   extra1ChannelNo(1)
+   |  |           +-- -RW- String    extra1Compression(2)
+   |  |           |        Textual Convention: DisplayString
+   |  |           |        Size: 0..255
+   |  |           +-- -RW- INTEGER   extra1FPS(3)
+   |  |           +-- -RW- String    extra1Resolution(4)
+   |  |           |        Textual Convention: DisplayString
+   |  |           |        Size: 0..255
+   |  |           +-- -RW- INTEGER   extra1BitRate(5)
+   |  |
+   |  +--eventConfig(2)
+   |  |  |
+   |  |  +--videoDetectConfig(1)
+   |  |  |  |
+   |  |  |  +--videoMotionInfoTable(1)
+   |  |  |  |  |
+   |  |  |  |  +--videoMotionInfoEntry(1)
+   |  |  |  |     |  Index: videoMotionIndex
+   |  |  |  |     |
+   |  |  |  |     +-- -RW- INTEGER   videoMotionIndex(1)
+   |  |  |  |
+   |  |  |  +--videoLossInfoTable(2)
+   |  |  |  |  |
+   |  |  |  |  +--videoLossInfoEntry(1)
+   |  |  |  |     |  Index: videoLossIndex
+   |  |  |  |     |
+   |  |  |  |     +-- -RW- INTEGER   videoLossIndex(1)
+   |  |  |  |
+   |  |  |  +--videoBlindInfoTable(3)
+   |  |  |     |
+   |  |  |     +--videoBlindInfoEntry(1)
+   |  |  |        |  Index: videoBlindIndex
+   |  |  |        |
+   |  |  |        +-- -RW- INTEGER   videoBlindIndex(1)
+   |  |  |
+   |  |  +--alarmConfig(2)
+   |  |  |  |
+   |  |  |  +--localAlarmInfoTable(1)
+   |  |  |  |  |
+   |  |  |  |  +--localAlarmInfoEntry(1)
+   |  |  |  |     |  Index: localAlarmIndex
+   |  |  |  |     |
+   |  |  |  |     +-- -RW- INTEGER   localAlarmIndex(1)
+   |  |  |  |
+   |  |  |  +--networkAlarmInfoTable(2)
+   |  |  |     |
+   |  |  |     +--networkAlarmInfoEntry(1)
+   |  |  |        |  Index: networkAlarmIndex
+   |  |  |        |
+   |  |  |        +-- -RW- INTEGER   networkAlarmIndex(1)
+   |  |  |
+   |  |  +--exceptionConfig(3)
+   |  |
+   |  +--recordConfig(3)
+   |     |
+   |     +--recordPlanInfo(1)
+   |        |
+   |        +--recordMainStreamInfoTable(1)
+   |        |  |
+   |        |  +--recordMainStreamInfoEntry(1)
+   |        |     |  Index: recordMainChannelIndex
+   |        |     |
+   |        |     +-- -RW- INTEGER   recordMainChannelIndex(1)
+   |        |
+   |        +--recordExtraStreamInfoTable(2)
+   |           |
+   |           +--recordExtraStreamInfoEntry(1)
+   |              |  Index: recordExtraChannelIndex
+   |              |
+   |              +-- -RW- INTEGER   recordExtraChannelIndex(1)
+   |
+   +--storageInfo(4)
+   |  |
+   |  +--physicalVolumeInfoTable(1)
+   |  |  |
+   |  |  +--physicalVolumeInfoEntry(1)
+   |  |     |  Index: physicNo
+   |  |     |
+   |  |     +-- -R-- INTEGER   physicNo(2)
+   |  |     +-- -R-- INTEGER   logicNo(3)
+   |  |     +-- -R-- String    physicalVolumeName(4)
+   |  |     |        Textual Convention: DisplayString
+   |  |     |        Size: 0..255
+   |  |     +-- -R-- String    physicalVolumeStatus(5)
+   |  |     |        Textual Convention: DisplayString
+   |  |     |        Size: 0..255
+   |  |     +-- -R-- INTEGER   physicalVolumeUsage(6)
+   |  |     |        Range: 0..100
+   |  |     +-- -R-- INTEGER   physicalVolumeTotal(7)
+   |  |
+   |  +-- -R-- INTEGER   physicalVolumeNumber(2)
+   |  +-- -R-- INTEGER   physicalVolumeDisAliveNumber(3)
+   |
+   +--products(10)
+   |  |
+   |  +--videoChannelInfo(1)
+   |  |  |
+   |  |  +--videoChannelStatusTable(1)
+   |  |     |
+   |  |     +--videoChannelStatusEntry(1)
+   |  |        |  Index: videoChannelIndex
+   |  |        |
+   |  |        +-- -R-- INTEGER   videoChannelIndex(1)
+   |  |        +-- -R-- EnumVal   videoChannelStatus(2)
+   |  |        |        Values: online(1), offline(0)
+   |  |        +-- -R-- String    videoChannelName(3)
+   |  |                 Textual Convention: DisplayString
+   |  |                 Size: 0..255
+   |  |
+   |  +--remoteDeviceInfo(2)
+   |  |  |
+   |  |  +-- -R-- INTEGER   remoteDeviceNumber(1)
+   |  |  |
+   |  |  +--remoteDeviceInfoTable(2)
+   |  |     |
+   |  |     +--remoteDeviceInfoEntry(1)
+   |  |        |  Index: remoteDeviceIndex
+   |  |        |
+   |  |        +-- -R-- INTEGER   remoteDeviceIndex(1)
+   |  |        +-- -R-- String    remoteDeviceIpAddr(2)
+   |  |        |        Textual Convention: DisplayString
+   |  |        |        Size: 0..255
+   |  |        +-- -R-- String    remoteDeviceStatus(3)
+   |  |        |        Textual Convention: DisplayString
+   |  |        |        Size: 0..255
+   |  |        +-- -R-- String    remoteDeviceName(4)
+   |  |                 Textual Convention: DisplayString
+   |  |                 Size: 0..255
+   |  |
+   |  +--ipc(3)
+   |  |
+   |  +--evs(4)
+   |  |
+   |  +--nvd(5)
+   |     |
+   |     +-- -R-- String    decodeFormat(1)
+   |     |        Textual Convention: DisplayString
+   |     |        Size: 0..255
+   |     +-- -R-- INTEGER   decodeCap(2)
+   |     +-- -R-- String    powerVol(3)
+   |              Textual Convention: DisplayString
+   |              Size: 0..255
+   |
+   +--notification(11)
+   |  |
+   |  +--snmpStatusEvent(2)
+   |  |
+   |  +--multiMediaEvent(11)
+   |  |  |
+   |  |  +--videoMotionEvent(1)
+   |  |  +--videoBlindEvent(2)
+   |  |  +--videoLossEvent(3)
+   |  |
+   |  +--alarmEvent(12)
+   |  |  |
+   |  |  +--localAlarmEvent(1)
+   |  |  +--netMonitorAbortEvent(2)
+   |  |
+   |  +--storageEvent(13)
+   |  |  |
+   |  |  +--storageFailureEvent(1)
+   |  |  +--storageLowSpaceEvent(2)
+   |  |  +--storageInOutEvent(3)
+   |  |  +--storageSMARTAbnormityEvent(4)
+   |  |  +--volumeGroupFaultEvent(5)
+   |  |
+   |  +--recordEvent(14)
+   |  |  |
+   |  |  +--recordMainStreamEvent(1)
+   |  |  +--recordExtraStreamEvent(2)
+   |  |
+   |  +--evsEvent(15)
+   |  |  |
+   |  |  +--nasServerStatusEvent(1)
+   |  |
+   |  +--powerEvent(16)
+   |  |  |
+   |  |  +--powerStatusEvent(1)
+   |  |
+   |  +--keepAliveEvent(17)
+   |     |
+   |     +--keepAliveEvent(1)
+   |
+   +--intelSnmpTrap(12)
+      |
+      +-- ---N String    action(1)
+      |        Textual Convention: DisplayString
+      |        Size: 0..255
+      +-- ---N String    currentTime(2)
+      |        Textual Convention: DisplayString
+      |        Size: 0..255
+      +-- ---N EnumVal   snmpStatus(3)
+      |        Values: start(0), stop(1)
+      +-- ---N INTEGER   physicalVolumeThreshold(4)
+      +-- ---N String    serverName(5)
+      |        Textual Convention: DisplayString
+      |        Size: 0..255
+      +-- ---N String    powertype(6)
+      |        Textual Convention: DisplayString
+      |        Size: 0..255
+      +-- ---N String    powerfault(7)
+               Textual Convention: DisplayString
+               Size: 0..255
