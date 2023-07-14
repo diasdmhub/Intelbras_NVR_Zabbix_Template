@@ -1,4 +1,4 @@
-# Zabbix SNMP Template - NVR Intelbras
+# Zabbix SNMP Template - NVR Intelbras / Dahua
 
 <div align="right">
 <a href="./LICENSE">
