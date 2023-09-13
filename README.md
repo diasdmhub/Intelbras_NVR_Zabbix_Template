@@ -25,6 +25,9 @@ Funciona em modelos de NVR da <b>Intelbras</b> ou <b>Dahua</b>, entretanto, adap
 Disponível para o **Zabbix 5.4 ou maior**. Novas versões do Zabbix podem ter alterações.
 <BR><i>Available for Zabbix 5.4 or higher. New Zabbix versions might have changes.</i>
 
+<BR>
+
+### TESTED VERSION
 <b>
 Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Deve funcionar em outros de NVRs Intelbras ou Dahua também.
 <BR><i>This template was tested on Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should work with other Intelbras or Dahua NVRs as well.</i>
@@ -33,6 +36,7 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 <BR><i>Feedbacks are welcome.</i>
 </b>
 </p>
+<BR>
 
 ---
 ### ➡️ <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases">Download (releases)</a>
@@ -120,32 +124,8 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 <BR>
 
 
-### DISCOVERY RULES
+### ITEMS
 <table>
-    <tr>
-        <td>Camera Discovery <i>(items, trigger)</i></td>
-    </tr>
-    <tr>
-	<td>Disk Discovery <i>(items, trigger, graph)</i></td>
-    </tr>
-    <tr>
-	<td>Network interfaces discovery <i>(items, trigger, graph)</i></td>
-    </tr>
-</table>
-<BR>
-
-
-### ITEMS COLLECTED
-<table>
-  <tr>
-        <td>Camera IP <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Camera Name <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Camera Status <i>(discovery)</i></td>
-  </tr>
   <tr>
         <td>CPU Usage</td>
   </tr>
@@ -163,48 +143,6 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
   </tr>
   <tr>
         <td>Device Type</td>
-  </tr>
-  <tr>
-        <td>Disk Name <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Disk Percent Free <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Disk Size <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Disk Status <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Disk Used <i>(discovery)</i></td>
-  </tr>
-  <tr>
-	<td>Interface: Bits received <i>(discovery)</i></td>
-  </tr>
-  <tr>
-	<td>Interface: Bits sent <i>(discovery)</i></td>
-  </tr>
-  <tr>
-	<td>Interface: Inbound packets discarded <i>(discovery)</i></td>
-  </tr>
-  <tr>
-	<td>Interface: Inbound packets with errors <i>(discovery)</i></td>
-  </tr>
-  <tr>
-	<td>Interface: Interface type <i>(discovery)</i></td>
-  </tr>
-  <tr>
-	<td>Interface: Operational status <i>(discovery)</i></td>
-  </tr>
-  <tr>
-	<td>Interface: Outbound packets discarded <i>(discovery)</i></td>
-  </tr>
-  <tr>
-	<td>Interface: Outbound packets with errors <i>(discovery)</i></td>
-  </tr>
-  <tr>
-	<td>Interface: Speed <i>(discovery)</i></td>
   </tr>
   <tr>
         <td>Memory Utilization</td>
@@ -255,12 +193,6 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 ### TRIGGERS
 <table>
   <tr>
-        <td>Camera disconnected <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Camera absent <i>(discovery)</i></td>
-  </tr>
-  <tr>
         <td>CPU High Utilization</td>
   </tr>
   <tr>
@@ -271,24 +203,6 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
   </tr>
   <tr>
         <td>Device System Version changed</td>
-  </tr>
-  <tr>
-        <td>Disk ERROR <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Disk free space is low <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Interface: Ethernet has changed to lower speed than it was before <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Interface: High bandwidth usage <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Interface: High error rate <i>(discovery)</i></td>
-  </tr>
-  <tr>
-        <td>Interface: Link down <i>(discovery)</i></td>
   </tr>
   <tr>
         <td>Memory High Utilization</td>
@@ -304,6 +218,108 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
   </tr>
   <tr>
         <td>System Status Offline</td>
+  </tr>
+</table>
+<BR>
+
+
+### DISCOVERY RULES
+<table>
+    <tr>
+        <td>Camera Discovery <i>(items, trigger)</i></td>
+    </tr>
+    <tr>
+	<td>Disk Discovery <i>(items, trigger, graph)</i></td>
+    </tr>
+    <tr>
+	<td>Network interfaces discovery <i>(items, trigger, graph)</i></td>
+    </tr>
+</table>
+<BR>
+
+
+### ITEM PROTOTYPES
+<table>
+  <tr>
+        <td>Camera IP</td>
+  </tr>
+  <tr>
+        <td>Camera Name</td>
+  </tr>
+  <tr>
+        <td>Camera Status</td>
+  </tr>
+  <tr>
+        <td>Disk Name</td>
+  </tr>
+  <tr>
+        <td>Disk Percent Free</td>
+  </tr>
+  <tr>
+        <td>Disk Size</td>
+  </tr>
+  <tr>
+        <td>Disk Status</td>
+  </tr>
+  <tr>
+        <td>Disk Used</td>
+  </tr>
+  <tr>
+	<td>Interface: Bits received</td>
+  </tr>
+  <tr>
+	<td>Interface: Bits sent</td>
+  </tr>
+  <tr>
+	<td>Interface: Inbound packets discarded</td>
+  </tr>
+  <tr>
+	<td>Interface: Inbound packets with errors</td>
+  </tr>
+  <tr>
+	<td>Interface: Interface type</td>
+  </tr>
+  <tr>
+	<td>Interface: Operational status</td>
+  </tr>
+  <tr>
+	<td>Interface: Outbound packets discarded</td>
+  </tr>
+  <tr>
+	<td>Interface: Outbound packets with errors</td>
+  </tr>
+  <tr>
+	<td>Interface: Speed</td>
+  </tr>
+</table>
+<BR>
+
+
+### TRIGGER PROTOTYPES
+<table>
+  <tr>
+        <td>Camera disconnected</td>
+  </tr>
+  <tr>
+        <td>Camera absent</td>
+  </tr>
+  <tr>
+        <td>Disk ERROR</td>
+  </tr>
+  <tr>
+        <td>Disk free space is low</td>
+  </tr>
+  <tr>
+        <td>Interface: Ethernet has changed to lower speed than it was before</td>
+  </tr>
+  <tr>
+        <td>Interface: High bandwidth usage</td>
+  </tr>
+  <tr>
+        <td>Interface: High error rate</td>
+  </tr>
+  <tr>
+        <td>Interface: Link down</td>
   </tr>
 </table>
 <BR>
