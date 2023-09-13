@@ -349,3 +349,5 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
 ![Dashboard example](images/nvr_dashboard.png)
 ---
 ![Dashboard example](images/nvr_dashboard2.png)
+---
+![Dashboard example](images/grafana_dash_nvd_3316_P.png)
