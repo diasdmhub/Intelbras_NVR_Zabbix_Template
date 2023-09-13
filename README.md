@@ -104,8 +104,8 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
     </tr>
 </table>
 
-<p>Essas macros devem ser alteradas a nível de Host para refletir as portas de seu host monitorado.
-<BR><i>These macros should be changed at Host level to reflect your monitored host ports.</i></p>
+> <p><b>Essas macros devem ser alteradas a nível de Host para refletir as portas de seu host monitorado.</b>
+> <BR><b><i>These macros should be changed at Host level to reflect your monitored host ports.</i></b></p>
 <BR>
 
 
