@@ -17,19 +17,21 @@
 
 <p>
 Monitore dados SNMP do seu NVR Intelbras.
-<BR><i>Monitor SNMP data from your Intelbras NVR.</i>
+<BR><i>Monitor SNMP data from your Intelbras NVR.</i><BR>
 
 Funciona em modelos de NVR da <b>Intelbras</b> ou <b>Dahua</b>, entretanto, adaptações podem ser necessárias dependendo do dispositivo.
-<BR><i>Works on different NVR models from <b>Intelbras</b> or <b>Dahua</b>, although, adaptations might be required.</i>
+<BR><i>Works on different NVR models from <b>Intelbras</b> or <b>Dahua</b>, although, adaptations might be required.</i><BR>
 
 Disponível para o **Zabbix 5.4 ou maior**. Novas versões do Zabbix podem ter alterações.
-<BR><i>Available for Zabbix 5.4 or higher. New Zabbix versions might have changes.</i>
+<BR><i>Available for Zabbix 5.4 or higher. New Zabbix versions might have changes.</i><BR>
+</p>
 
 <BR>
 
 ### TESTED VERSION
+<p>
 <b>
-Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Deve funcionar em outros de NVRs Intelbras ou Dahua também.
+Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Também Deve funcionar em outros de NVRs Intelbras ou Dahua.
 <BR><i>This template was tested on Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should work with other Intelbras or Dahua NVRs as well.</i>
 
 <BR>Observações são bem-vindas.
@@ -104,8 +106,8 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
     </tr>
 </table>
 
-> <p><b>Essas macros devem ser alteradas a nível de Host para refletir as portas de seu host monitorado.</b>
-> <BR><b><i>These macros should be changed at Host level to reflect your monitored host ports.</i></b></p>
+> <<b>Essas macros devem ser alteradas a nível de Host para refletir as portas de seu host monitorado.</b>
+> <BR><b><i>These macros should be changed at Host level to reflect your monitored host ports.</i></b></
 <BR>
 
 
