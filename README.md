@@ -30,13 +30,11 @@ Disponível para o **Zabbix 5.4 ou maior**. Novas versões do Zabbix podem ter a
 
 ### TESTED VERSION
 <p>
-<b>
 Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Também Deve funcionar em outros de NVRs Intelbras ou Dahua.
-<BR><i>This template was tested on Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should work with other Intelbras or Dahua NVRs as well.</i>
+<BR><i>This template was tested on Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should work with other Intelbras or Dahua NVRs as well.</i><BR>
 
 <BR>Observações são bem-vindas.
 <BR><i>Feedbacks are welcome.</i>
-</b>
 </p>
 <BR>
 
@@ -106,8 +104,8 @@ Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316
     </tr>
 </table>
 
-> <<b>Essas macros devem ser alteradas a nível de Host para refletir as portas de seu host monitorado.</b>
-> <BR><b><i>These macros should be changed at Host level to reflect your monitored host ports.</i></b></
+> **Essas macros devem ser alteradas a nível de Host para refletir as portas de seu host monitorado.** \
+> _**These macros should be changed at Host level to reflect your monitored host ports.**_
 <BR>
 
 
