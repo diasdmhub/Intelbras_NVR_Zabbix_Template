@@ -15,33 +15,33 @@
 
 ### OVERVIEW
 
-<p>
-Monitore dados SNMP do seu NVR Intelbras.
-<BR><i>Monitor SNMP data from your Intelbras NVR.</i><BR>
+Monitore dados SNMP do seu NVR Intelbras. \
+*Monitor SNMP data from your Intelbras NVR.*
 
-Funciona em modelos de NVR da <b>Intelbras</b> ou <b>Dahua</b>, entretanto, adaptações podem ser necessárias dependendo do dispositivo.
-<BR><i>Works on different NVR models from <b>Intelbras</b> or <b>Dahua</b>, although, adaptations might be required.</i><BR>
+Funciona em modelos de NVR da **Intelbras** ou **Dahua**, entretanto, adaptações podem ser necessárias dependendo do dispositivo. \
+*Works on different NVR models from **Intelbras** or **Dahua**, although, adaptations might be required.*
 
-Disponível para o **Zabbix 5.4 ou maior**. Novas versões do Zabbix podem ter alterações.
-<BR><i>Available for Zabbix 5.4 or higher. New Zabbix versions might have changes.</i><BR>
-</p>
+Disponível para o **Zabbix 5.4 ou maior**. Novas versões do Zabbix podem ter alterações. \
+*Available for Zabbix 5.4 or higher. New Zabbix versions might have changes.*
 
 <BR>
 
 ### TESTED VERSION
-<p>
-Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Também Deve funcionar em outros de NVRs Intelbras ou Dahua.
-<BR><i>This template was tested on Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should work with other Intelbras or Dahua NVRs as well.</i><BR>
 
-<BR>Observações são bem-vindas.
-<BR><i>Feedbacks are welcome.</i>
-</p>
+Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Também Deve funcionar em outros de NVRs Intelbras ou Dahua. \
+_This template was tested on Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should work with other Intelbras or Dahua NVRs as well._
+
+<BR>
+
+**Observações são bem-vindas.** \
+_**Feedbacks are welcome.**_
+
 <BR>
 
 ---
-### ➡️ <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases">Download (releases)</a>
+### ➡️ [Download (releases)](https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases)
 ---
-#### ➡️ <a href="https://www.zabbix.com/documentation/current/en/manual/xml_export_import/templates#importing"><i>Como importar templates/How to import templates.</i></a>
+#### ➡️ [*Como importar templates/How to import templates.*](https://www.zabbix.com/documentation/current/en/manual/xml_export_import/templates#importing)
 ---
 <BR>
 
