@@ -183,9 +183,6 @@ _**Feedbacks are welcome.**_
   <tr>
         <td>Uptime Enterprise</td>
   </tr>
-  <tr>
-        <td>Uptime Generic</td>
-  </tr>
 </table>
 <BR>
 
