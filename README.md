@@ -4,7 +4,7 @@
 
   [![Version6.4](https://img.shields.io/badge/Release-647-blue?logo=azurepipelines&amp;color=0aa8d2)](https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/zabbix64)
   [![Version6.0](https://img.shields.io/badge/Release-6022-blue?logo=azurepipelines&amp;color=0aa8d2)](https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/zabbix60)
-  [![LICENSE](https://img.shields.io/badge/License-GPL3-blue?logo=opensourceinitiative&logoColor=fff")](./LICENSE) 
+  [![LICENSE](https://img.shields.io/badge/License-GPL3-blue?logo=opensourceinitiative&logoColor=fff)](./LICENSE) 
 </div>
 
 
