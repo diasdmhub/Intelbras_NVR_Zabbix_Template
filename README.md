@@ -1,7 +1,7 @@
 # Zabbix SNMP Template - NVR Intelbras / Dahua
 
 <div align="right">
-  <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/zabbix64">
+  <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/zabbix70">
     <img src="https://img.shields.io/badge/Release-700-blue?logo=azurepipelines&amp;color=0aa8d2">
   </a>
   <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/zabbix60">
