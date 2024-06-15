@@ -280,7 +280,7 @@ zabbix_export:
           snmp_oid: 'walk[.1.3.6.1.2.1.2.2.1.2,.1.3.6.1.2.1.2.2.1.3,.1.3.6.1.2.1.2.2.1.5,.1.3.6.1.2.1.2.2.1.7,.1.3.6.1.2.1.2.2.1.8,.1.3.6.1.2.1.2.2.1.10,.1.3.6.1.2.1.2.2.1.13,.1.3.6.1.2.1.2.2.1.14,.1.3.6.1.2.1.2.2.1.16,.1.3.6.1.2.1.2.2.1.19,.1.3.6.1.2.1.2.2.1.20,.1.3.6.1.2.1.31.1.1.1.1]'
           key: enterprises.ifEntry.walk
           delay: 3m
-          history: 1d
+          history: '0'
           trends: '0'
           value_type: TEXT
           description: |
@@ -439,7 +439,7 @@ zabbix_export:
           snmp_oid: 'walk[.1.3.6.1.4.1.1004849.2.4.1.1.4,.1.3.6.1.4.1.1004849.2.4.1.1.5,.1.3.6.1.4.1.1004849.2.4.1.1.6,.1.3.6.1.4.1.1004849.2.4.1.1.7]'
           key: enterprises.physicalVolumeInfo.walk
           delay: 5m
-          history: 1d
+          history: '0'
           trends: '0'
           value_type: TEXT
           description: |
@@ -455,7 +455,7 @@ zabbix_export:
           snmp_oid: 'walk[.1.3.6.1.4.1.1004849.2.10.2.2.1.2,.1.3.6.1.4.1.1004849.2.10.2.2.1.3,.1.3.6.1.4.1.1004849.2.10.2.2.1.4]'
           key: enterprises.remoteDeviceInfo.walk
           delay: 5m
-          history: 1d
+          history: '0'
           trends: '0'
           value_type: TEXT
           description: |
@@ -494,7 +494,7 @@ zabbix_export:
           snmp_oid: 'walk[.1.3.6.1.4.1.1004849.2.1.2,.1.3.6.1.4.1.1004849.2.1.3,.1.3.6.1.4.1.1004849.2.1.6,.1.3.6.1.4.1.1004849.2.1.7,.1.3.6.1.4.1.1004849.2.1.8,.1.3.6.1.4.1.1004849.2.1.9,.1.3.6.1.4.1.1004849.2.1.10,.1.3.6.1.4.1.1004849.2.2.2.8]'
           key: enterprises.system.walk
           delay: 3m
-          history: 1d
+          history: '0'
           trends: '0'
           value_type: TEXT
           description: |
@@ -633,7 +633,7 @@ zabbix_export:
           snmp_oid: 'walk[.1.3.6.1.2.1.1.1,.1.3.6.1.2.1.1.4,.1.3.6.1.2.1.1.5,.1.3.6.1.2.1.1.6]'
           key: general.system.walk
           delay: 3m
-          history: 1d
+          history: '0'
           trends: '0'
           value_type: TEXT
           description: |
@@ -1906,7 +1906,7 @@ zabbix_export:
                       value: '1'
                 - type: graphprototype
                   'y': '15'
-                  width: '36'
+                  width: '30'
                   height: '5'
                   fields:
                     - type: GRAPH_PROTOTYPE
@@ -1959,6 +1959,22 @@ zabbix_export:
                     - type: STRING
                       name: thresholds.1.threshold
                       value: '2'
+                - type: problems
+                  name: 'Recent Events'
+                  x: '30'
+                  'y': '15'
+                  width: '42'
+                  height: '5'
+                  fields:
+                    - type: STRING
+                      name: reference
+                      value: UPVCJ
+                    - type: INTEGER
+                      name: show_opdata
+                      value: '1'
+                    - type: INTEGER
+                      name: show_tags
+                      value: '1'
                 - type: item
                   name: 'NVR STATUS'
                   x: '38'
