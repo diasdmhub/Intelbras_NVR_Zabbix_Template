@@ -2,7 +2,7 @@
 
 <div align="right">
     <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/zabbix70">
-        <img src="https://img.shields.io/badge/Release-701-blue?logo=azurepipelines&amp;color=0aa8d2">
+        <img src="https://img.shields.io/badge/Release-703-blue?logo=azurepipelines&amp;color=0aa8d2">
     </a>
     <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/zabbix60">
         <img src="https://img.shields.io/badge/Release-6022-blue?logo=azurepipelines&amp;color=0aa8d2">
@@ -16,21 +16,21 @@
 
 ### OVERVIEW
 
-Monitore dados SNMP do seu NVR Intelbras. \
-*Monitor SNMP data from your Intelbras NVR.*
+Monitore dados SNMP do seu NVR Intelbras ou Dahua. \
+*Monitor SNMP data from your Intelbras or Dahua NVR.*
 
 Funciona em modelos de NVR da **Intelbras** ou **Dahua**, entretanto, adaptações podem ser necessárias dependendo do dispositivo. \
-*Works on different NVR models from **Intelbras** or **Dahua**, although, adaptations might be required.*
+*Works on **Intelbras** or **Dahua** NVR models, although customization might be required depending on the device.*
 
-Disponível para o **Zabbix 5.4 ou maior**. Novas versões do Zabbix podem ter alterações. \
-*Available for Zabbix 5.4 or higher. New Zabbix versions might have changes.*
+Versões antigas disponíveis no diretório [Template](./Template). \
+*Older versions available in the [Template](./Template) directory.*
 
 <BR>
 
 ### TESTED VERSION
 
-Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Também Deve funcionar em outros de NVRs Intelbras ou Dahua. \
-_This template was tested on Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should work with other Intelbras or Dahua NVRs as well._
+Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Também deve funcionar em outros NVRs Intelbras ou Dahua. \
+_This template was tested on Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should also work with other Intelbras or Dahua NVRs as well._
 
 <BR>
 
@@ -117,7 +117,7 @@ _**Feedbacks are welcome.**_
 </table>
 
 > **Essas macros devem ser alteradas a nível de Host para refletir as configurações de seu host monitorado.** \
-> _**These macros should be changed at Host level to reflect your monitored host configuration.**_
+> _**These macros should be changed at the Host level to reflect your monitored host configuration.**_
 
 <BR>
 
