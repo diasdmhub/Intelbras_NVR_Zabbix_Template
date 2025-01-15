@@ -2,11 +2,7 @@
 
 <div align="right">
     <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/zabbix70">
-        <img src="https://img.shields.io/badge/Release-703-blue?logo=azurepipelines&amp;color=0aa8d2">
-    </a>
-    <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/zabbix60">
-        <img src="https://img.shields.io/badge/Release-6022-blue?logo=azurepipelines&amp;color=0aa8d2">
-    </a>
+        <img src="https://img.shields.io/badge/Release-703-blue?logo=zotero&color=0aa8d2">
     <a href="./LICENSE">
         <img src="https://img.shields.io/badge/License-GPL3-blue?logo=opensourceinitiative&logoColor=fff">
     </a>
