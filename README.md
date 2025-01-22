@@ -1,8 +1,9 @@
-# Zabbix SNMP Template - NVR Intelbras / Dahua
+# Zabbix Template - NVR Intelbras / Dahua by SNMP
 
 <div align="right">
     <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/zabbix70">
         <img src="https://img.shields.io/badge/Release-703-blue?logo=zotero&color=0aa8d2">
+    </a>
     <a href="./LICENSE">
         <img src="https://img.shields.io/badge/License-GPL3-blue?logo=opensourceinitiative&logoColor=fff">
     </a>
@@ -398,12 +399,12 @@ _**Feedbacks are welcome.**_
 
 ### DASHBOARD EXAMPLE
 
-![Dashboard example](images/nvr_dashboard.png)
+![Dashboard example 1](images/nvr_dashboard.png)
 
 ---
 
-![Dashboard example](images/nvr_dashboard2.png)
+![Dashboard example 2](images/nvr_dashboard2.png)
 
 ---
 
-![Dashboard example](images/grafana_dash_nvd_3316_P.png)
+![Dashboard example 3](images/grafana_dash_nvd_3316_P.png)
