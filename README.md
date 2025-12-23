@@ -2,7 +2,7 @@
 
 <div align="right">
     <a href="https://github.com/diasdmhub/Intelbras_NVR_Zabbix_Template/releases/tag/zabbix72">
-        <img src="https://img.shields.io/badge/Release-722-blue?logo=zotero&color=0aa8d2">
+        <img src="https://img.shields.io/badge/Release-745-blue?logo=zotero&color=0aa8d2">
     </a>
     <a href="./LICENSE">
         <img src="https://img.shields.io/badge/License-GPL3-blue?logo=opensourceinitiative&logoColor=fff">
