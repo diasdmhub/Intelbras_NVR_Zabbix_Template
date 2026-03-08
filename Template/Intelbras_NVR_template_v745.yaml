@@ -1257,7 +1257,9 @@ zabbix_export:
                     - tag: Status
                       value: absent
                 - uuid: 751f317495fb42e1927b45d10327385d
-                  expression: 'last(/Intelbras Dahua NVR by SNMP/remoteDevice.Status[{#SNMPINDEX}],#1)=2'
+                  expression: 'last(/Intelbras Dahua NVR by SNMP/remoteDevice.Status[{#SNMPINDEX}],#1)=2 and last(/Intelbras Dahua NVR by SNMP/remoteDevice.Status[{#SNMPINDEX}],#2)=1'
+                  recovery_mode: RECOVERY_EXPRESSION
+                  recovery_expression: 'last(/Intelbras Dahua NVR by SNMP/remoteDevice.Status[{#SNMPINDEX}])=1'
                   name: 'Camera {#SNMPINDEX} disconnected - {#CAM_NAME}'
                   opdata: '{#CAM_NAME} - {#CAM_STATUS}'
                   priority: WARNING
