@@ -26,8 +26,8 @@ Versões antigas disponíveis no diretório [Template](./Template). \
 
 ### TESTED VERSION
 
-Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P" e "NVD 3316 P". Também deve funcionar em outros NVRs Intelbras ou Dahua. \
-_This template was tested on Intelbras NVR "NVD 3116 P" and "NVD 3316 P". It should also work with other Intelbras or Dahua NVRs as well._
+Esta template foi testada somente com os NVRs Intelbras "NVD 3116 P", "NVD 3316 P" e "NVD 1408" . Também deve funcionar em outros NVRs Intelbras ou Dahua. \
+_This template was tested on Intelbras NVR "NVD 3116 P", "NVD 3316 P" and "NVD 1408". It should also work with other Intelbras or Dahua NVRs as well._
 
 <BR>
 
